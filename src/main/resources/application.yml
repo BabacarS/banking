@@ -1,0 +1,18 @@
+spring:
+  #  color log
+  output:
+    ansi:
+      enabled: ALWAYS
+  application:
+    name: btech_banking
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banking
+    username: postgres
+    password: Sophiebaba5
+  jpa:
+    hibernate:
+      #  create table if not
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
